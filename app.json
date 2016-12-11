@@ -1,0 +1,35 @@
+{
+  "name": "AppleProd24bot",
+  "scripts": {
+  },
+  "env": {
+    "APIAI_ACCESS_TOKEN": {
+      "required": true
+    },
+    "APIAI_LANG": {
+      "required": true
+    },
+    "APP_NAME": {
+      "required": true
+    },
+    "TELEGRAM_TOKEN": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://shrouded-anchorage-45136.herokuapp.com/"
+    }
+  ]
+}
